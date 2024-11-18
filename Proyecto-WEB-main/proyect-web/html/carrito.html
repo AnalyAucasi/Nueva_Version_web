@@ -1,0 +1,92 @@
+<DOCTYPE html>
+<html>
+
+<head>
+    <html lang="es"></html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <title>Carrito - Perú Peluches</title>
+    
+    <link rel="stylesheet" href="../css/header-pagina.css">
+    <link rel="stylesheet" href="../css/footer-pagina.css">
+
+    <link rel="stylesheet" href="../css/estilo-carrito.css">
+       <!-- codigo para poner icono en tu imagen-->
+<link rel="icon" type="image/png" href="../imgs/images (1).png">
+<body>
+    <header>
+        <div class="header-orden">
+            <div>
+                <div>
+                    <a href="../index.html"><img src="../imgs/logo-empresa.png" alt="Logo de la pagina" class="icon-logo"></a>
+                </div>
+            </div>
+            <div class="opciones-header">
+                <div>
+                    <a href="../html/carrito.html"><img src="../imgs/icons/carrito-de-compras.png"
+                            alt="icono de carrito de compras" class="icon-carrito"></a>
+                </div>
+                <div class="btn-menu-lateral">
+                    <label for="btn-menu-lateral" class="label-menu-lateral"><img src="../imgs/icons/categorias.png"
+                            alt="icono para mostrar el menu lateral" class="icon-categorias"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="capa-menu-lateral">
+        <input type="checkbox" id="btn-menu-lateral">
+        <div class="container-menu-lateral">
+            <div class="opciones-menu-lateral">
+                <label for="btn-menu-lateral" class="cerrar-menu-lateral"><img src="../imgs/icons/x-cerrar.png"
+                        alt="icono para cerrar menu lateral" class="icon-cerrar"></label>
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../html/productos-01.html">Productos</a>
+                    <div class="menu-categorias">
+                        <a>Categorías</a>
+                        <ul class="opciones-menu-categorias">
+                            <li><a href="../html/productos-BT21.html">BT21</a></li>
+                            <li><a href="../html/productos-CERDITOS.html">Cerditos</a></li>
+                            <li><a href="../html/productos-DISNEY.html">Disney</a></li>
+                            <li><a href="../html/productos-POKEMON.html">Pokemon</a></li>
+                            <li><a href="../html/productos-SERIES-ANIMADAS.html">Series
+                                    Animadas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="../html/contacto.html">Contacto</a>
+                    <a href="../html/login.html">login</a>
+                </nav>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="opciones">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../html/productos-01.html">Productos</a>
+            <a href="../html/contacto.html">Contacto</a></li>
+            <a href="../html/login.html">login</a>
+        </nav>
+    </div>
+
+
+    <h1>🛒 Tu Carrito de Compras</h1>
+  
+  
+    <div id="contenedor-carrito" class="carrito-productos"></div>
+    <div class="carrito-resumen">
+        <h2>Total: S/. <span id="total-carrito">0</span></h2>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </div>
+
+    <script src="../js/carrito.js"></script>
+
+
+
+
+    </html>
+  

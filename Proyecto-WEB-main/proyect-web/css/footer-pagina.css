@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: rgba(229, 119, 118, 255);
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.container-info-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    grid-gap: 10px;
+    text-align: left;
+    text-justify: auto;
+}
+
+.container-info-footer div {
+    flex: 1;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-info-footer nav {
+    width: auto;
+    height: 40px;
+}
+
+.container-redes a {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 130%;
+}
+
+.container-redes a:hover {
+    color: rgb(224, 61, 142);
+    text-shadow: 2px 2px black;
+}
+
+.container-info-footer p {
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+}
+
+.container-redes img {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.animacion-saludo {
+    position: relative;
+}
+
+.animacion-saludo img {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    transform: translateY(5%);
+}
+
+.container-metodos-pago {
+    color: black;
+    font-weight: bold;
+}
+
+.container-metodos-pago ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.container-metodos-pago li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container-metodos-pago img {
+    width: 50px;
+    height: auto;
+}
+
+.derechos-reservados {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.derechos-reservados p {
+    font-size: 90%;
+    color: black;
+    font-weight: bold;
+}

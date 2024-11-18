@@ -1,0 +1,423 @@
+/*Seccion / Estilo del header, apegado a la parte superior y sin espacios en blanco con los limites de la pagina*/
+header {
+    border-color: rgba(224, 61, 142, 0.756);
+    border-style: solid;
+    border-radius: 1.5%;
+    background-color: rgb(255, 255, 255);
+    border-width: 10px;
+    font-family: cursive;
+    height: 200px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-orden {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opciones-header {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 5%;
+}
+
+header h2 {
+    margin-left: 20px;
+    font-size: 200%;
+}
+
+/*Seccion / Estilo del menú lateral (Enlace a las distintas paginas y el apartado categorias)*/
+/*se le coloca un "z-index" para que se sobreponga a los elementos de la pagina*/
+#btn-menu-lateral {
+    display: none;
+}
+
+#btn-menu-lateral:checked~.container-menu-lateral {
+    opacity: 1;
+    visibility: visible;
+}
+
+.container-menu-lateral {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.500);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
+    z-index: 2;
+}
+
+.opciones-menu-lateral {
+    background-color: white;
+    border-left: 5px solid rgb(224, 61, 142);
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    transition: all 500ms ease;
+}
+
+.opciones-menu-lateral nav {
+    padding-top: 80px;
+}
+
+.opciones-menu-lateral nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.opciones-menu-lateral nav a:hover {
+    background-color: rgb(255, 218, 246);
+    border-left: 5px solid rgb(224, 61, 142);
+    margin-left: 10px;
+}
+
+.container-menu-lateral label {
+    position: absolute;
+    right: 0px;
+}
+
+/*Estilo del submenu "categorias" dentro del menu lateral*/
+.opciones-menu-categorias {
+    display: none;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.opciones-menu-categorias li {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.menu-categorias:hover .opciones-menu-categorias {
+    display: block;
+}
+li a[href*="categorias"]{
+    color: violet;
+    text-shadow: 2px 1px black;
+}
+
+/*Seccion / Estilo marquee - se le coloca al marquee un "z-index" para que no se sobre ponga al menu lateral*/
+marquee {
+    z-index: 0;
+}
+
+/*Seccion / Estilo del body, orden, estilo de texto, fondo, bordes, diseño de los subtitulos*/
+body {
+    background: linear-gradient(to bottom, whitesmoke, rgb(255, 218, 246), whitesmoke);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.body-pagina {
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 110%;
+}
+
+/*Seccion / Estilo de parrafos*/
+p {
+    text-align: justify;
+    line-height: 2;
+}
+
+/*Seccion / Estilo de elementos de lista*/
+li {
+    text-align: left;
+    line-height: 2;
+}
+
+/*Seccion / Estilo de las tablas*/
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+    border: 5px solid rgb(224, 61, 142);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+tr,
+td {
+    border: 2px solid rgba(224, 61, 142, 0.329);
+    padding: 5px;
+    text-align: left;
+}
+
+/*Seccion / Estilo del body de la pagina "index"*/
+.inicio-body h3 {
+    margin: auto;
+    background-color: rgba(251, 163, 220, 0.563);
+    width: 400px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15%;
+}
+
+/*Estilo de las imagenes con su respectivo container colocadas en el "index" para adornar la pagina*/
+.img-container-inicio-bienvenido {
+    width: auto;
+    height: 400px;
+}
+
+.img-container-inicio-bienvenido img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.img-container-inicio-envios {
+    width: auto;
+    height: 400px;
+}
+
+.img-container-inicio-envios img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*Seccion / Estilo de body de la pagina "productos"*/
+.productos-body {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.productos-body h3 {
+    margin: auto;
+    background-color: rgba(251, 163, 220, 0.563);
+    width: 600px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 25%;
+}
+
+/*Estilo del container y de la imagen para agregarle un fondo al texto*/
+.container-fondo-texto-productos-txt-inicio {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.container-fondo-texto-productos-txt-inicio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/*Seccion / Estilo de body para la pagina "contacto"*/
+.contacto-body h3 {
+    margin: auto;
+    background-color: rgba(251, 163, 220, 0.563);
+    width: 600px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25%;
+}
+
+/*Seccion / Estilos de los iconos presentes en la pagina y del logo*/
+.icon-logo {
+    width: 400px;
+    height: 120px;
+    margin: 0px;
+    text-align: center;
+}
+
+.icon-carrito {
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-bottom: 25px;
+}
+
+.icon-categorias {
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 25px;
+}
+
+.icon-cerrar {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    top: 0;
+}
+
+/*Seccion / Estilo de la clase opciones ubicada debajo del marquee, y que contiene botones de enlace para los 3 apartados principales*/
+.opciones {
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/*Seccion / Estilo de boton para las paginas*/
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: 5px solid rgba(224, 61, 142, 0.756);
+    position: center;
+    background-color: rgba(230, 118, 204, 0.522);
+    width: 200px;
+    height: 50px;
+}
+
+/*Efecto de sombreado al poner el cursor sobre el boton*/
+button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+/*Seccion / Estilo de input para las paginas*/
+input {
+    height: 25px;
+}
+
+/*Seccion / Estilo para la tabla de productos destacados en "index"*/
+.productos-destacados img {
+    width: 300px;
+    height: 300px;
+}
+
+.productos-destacados p {
+    text-align: center;
+}
+
+.productos-destacados button {
+    width: 200px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.productos-destacados h4 {
+    color: red;
+}
+
+.productos-destacados td {
+    width: 500px;
+    height: 300px;
+}
+
+/*Seccion / Estilo del mapa de la pagina "contacto"*/
+.ubicacion-mapa {
+    text-align: center;
+}
+
+/*Seccion / Estilo de la galeria para la vista de los productos de la pagina "productos" y de las paginas correspondientes a categorias*/
+.Galeria-Productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: auto;
+    grid-gap: 40px;
+    padding: 40px;
+    background-color: white;
+    border: 5px solid rgb(224, 61, 142);
+}
+
+.Galeria-Productos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 5px solid rgb(224, 61, 142);
+}
+
+.Galeria-Productos a {
+    text-decoration: none;
+    color: black;
+    height: auto;
+}
+
+.Galeria-Productos img {
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    border: 5px solid black;
+    transition: transform 0.5s ease;
+}
+
+/*efecto de zoom sutil al poner el cursor sobre la imagen de un producto*/
+.Galeria-Productos img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    transform: scale(1.05);
+}
+
+.Galeria-Productos h4 {
+    margin-top: 10px;
+    color: red;
+}
+
+.Galeria-Productos p {
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+/*Seccion / Estilo del body de la pagina "carrito"*/
+.carrito-body {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 40px;
+}
+
+.container-lista-productos-carrito {
+    width: 60%;
+    border: 5px solid rgb(224, 61, 142);
+}
+
+.container-calculo-total-carrito {
+    width: 40%;
+    border: 5px solid rgb(224, 61, 142);
+}
+
+.carrito-body h2 {
+    text-justify: left;
+    padding: 20px;
+    font-size: 100%;
+}
+
+/*Seccion / Estilo y efecto de los iconos agregados en la pagina "contacto" del div class "container-datos-contacto"*/
+.fas {
+    transition: color 0.3s ease;
+}
+
+.fas:hover {
+    color: rgb(224, 61, 142);
+}
+

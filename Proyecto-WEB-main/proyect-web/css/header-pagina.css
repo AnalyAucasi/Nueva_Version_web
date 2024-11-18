@@ -1,0 +1,164 @@
+/*Estilo Body*/
+@font-face {
+    font-family: 'FuentePersonalizada';
+    src: url('../fuente-letra/Parallone-Regular.otf');
+}
+
+body {
+    font-family: 'FuentePersonalizada';
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 2;
+    background: linear-gradient(to bottom, whitesmoke, peachpuff, white);
+}
+
+/*Estilo header*/
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border: 10px solid rgba(229, 119, 118, 255);
+    z-index: 2;
+}
+
+.header-orden {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opciones-header {
+    display: flex;
+}
+
+/*Estilo icons*/
+.icon-logo {
+    width: 400px;
+    height: 120px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+}
+
+.icon-carrito {
+    padding: 20px;
+    width: 70px;
+    height: auto;
+    float: right;
+}
+
+.icon-categorias {
+    padding: 20px;
+    width: 70px;
+    height: auto;
+    float: right;
+    margin: auto;
+}
+
+.icon-cerrar {
+    padding: 10px;
+    width: 70px;
+    height: auto;
+    float: right;
+    top: 0;
+}
+
+/*Estilo menu lateral*/
+#btn-menu-lateral {
+    display: none;
+}
+
+#btn-menu-lateral:checked~.container-menu-lateral {
+    opacity: 1;
+    visibility: visible;
+}
+
+.container-menu-lateral {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.500);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: none;
+    z-index: 3;
+}
+
+.opciones-menu-lateral {
+    background-color: white;
+    border-left: 5px solid rgba(229, 119, 118, 255);
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    transition: none;
+}
+
+.opciones-menu-lateral nav {
+    padding-top: 80px;
+}
+
+.opciones-menu-lateral nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.opciones-menu-lateral nav a:hover {
+    background-color: rgb(255, 218, 246);
+    border-left: 5px solid rgb(224, 61, 142);
+    margin-left: 10px;
+}
+
+.container-menu-lateral label {
+    position: absolute;
+    right: 0px;
+}
+
+.opciones-menu-categorias {
+    display: none;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.opciones-menu-categorias li {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.menu-categorias:hover .opciones-menu-categorias {
+    display: block;
+}
+
+li a[href*="categorias"] {
+    color: violet;
+    text-shadow: 2px 1px black;
+}
+
+/*Estilo opciones*/
+.opciones {
+    margin-top: 110px;
+    background-color: rgba(229, 119, 118, 255);
+    border-top: 10px solid rgba(229, 119, 118, 255);
+    border-bottom: 10px solid rgba(229, 119, 118, 255);
+}
+
+.opciones nav {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.opciones nav a {
+    text-decoration: none;
+    width: 150px;
+    background-color: rgb(122, 49, 51);
+    color: white;
+    font-size: 150%;
+    text-align: center;
+}
